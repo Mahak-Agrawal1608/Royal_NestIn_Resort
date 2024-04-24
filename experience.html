@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css"
+    rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="static/index.css">
+  <script type="text/javascript" src="static/index.js"></script>
+  <style type="text/css">
+    .exo {
+      background-image: url('images/luxuryroom3.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 70vh;
+      display: flex;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .exo2 {
+      justify-content: center;
+      align-items: center;
+      color: black;
+      text-align: center;
+    }
+
+    #gap {
+      height: 30px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+
+    /*  Photo Gallery  */
+    .photo-gallery {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .photo {
+      flex: 1;
+      margin: 0 10px;
+      text-align: center;
+    }
+
+    .photo img {
+      width: 100%;
+      height: auto;
+    }
+
+    .name {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    /*photo gallery end*/
+
+/*another photo gallery begins*/
+
+
+.image-gallery {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.image {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.name2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px;
+  text-align: center;
+  transition: bottom 0.3s ease;
+  transform: translateY(100%);
+}
+
+.image:hover .name2 {
+  bottom: 0;
+  transform: translateY(0%);
+}
+
+.horizontal {
+  flex-basis: 100%; /* Stretch to cover the width of both columns */
+}
+
+.vertical {
+  flex: 1;
+}
+
+/*another photo gallery ends*/
+/*diuning ka copy wala strart*/
+
+.container1 {
+  max-width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.photo {
+  flex: 1;
+  max-width: calc(38% - 7.5px); /* Adjust based on desired gap */
+  margin-right: 10px; 
+  margin-left: 10px; 
+}
+
+.text {
+  flex: 1;
+  max-width: calc(62% - 7.5px); /* Adjust based on desired gap */
+  margin-left: 10px; 
+  margin-right: 10px;
+  color: #444;
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+}
+
+/*dining ka copy wala end*/
+
+
+
+  </style>
+</head>
+
+<body>
+
+  <!-- ************************************************************************************************************************************************************************************************************************************************************ -->
+
+
+
+
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top" style="background: transparent;">
+    <div class="container-fluid">
+      <div class="logo-container">
+        <a class="navbar-brand" href="#">
+          <img src="images/white_hotel_logo.png" alt="Logo">
+        </a>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav-container">
+          <div class="navbar-nav me-auto mb-2 mb-lg-0 me-2 social-icons" style="justify-content: flex-end;">
+            <a href="https://www.linkedin.com/in/mahak-agrawal-386259251" target="_blank"><i
+                class="bi bi-linkedin"></i></a>
+            <p>&#32;</p>
+            <a href="https://github.com/Mahak-Agrawal1608" target="_blank"><i class="bi bi-github"></i></a>
+            <p>&#32;</p>
+            <a href="https://www.instagram.com/oshi.rst" target="_blank"><i class="bi bi-instagram"></i></a>
+          </div>
+
+
+          <div class="navbar-divider"></div>
+
+          <div class="navbar-nav" style="justify-content: flex-end;">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="AboutUs.html">About Us</a>
+            <a class="nav-link" href="Accomodation.html">Accommodation</a>
+            <a class="nav-link" href="Dining.html">Dining</a>
+            <a class="nav-link" href="Wedding.html">Weddings</a>
+            <a class="nav-link" href="Experience.html">Experiences</a>
+            <a class="nav-link" href="Gallery.html">Gallery</a>
+            <a class="nav-link" href="Contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <!-- ************************************************************************************************************************************************************************************************************************************************************ -->
+
+
+  <div>
+    <section id="home" class="exo">
+      <div class="container">
+        <h2><strong>EXPERIENCE</strong></h2>
+        <p>Memorable experiences only at Royal NestIn Resort</p>
+      </div>
+    </section>
+</div>
+
+
+    <!-- ************************************************************************************************************************************************************************************************************************************************************ -->
+
+    <div id="gap"></div>
+
+    <div id="gap"></div>
+
+    <section class="exo2">
+      <div class="container">
+        <p>Our water sports / activities will not be operational during the monsoon period, keeping in mind <br>the
+          safety of our guests, your cooperation will be highly appreciated.</p>
+        <h2><strong>COMPLIMENTARY ACTIVITIES</strong></h2>
+        <p>Avail these complimentary activities when you stay at Royal NestIn</p>
+      </div>
+    </section>
+
+    <div id="gap"></div>
+
+
+    <!-- ************************************************************************************************************************************************************************************************************************************************************ -->
+    <div class="container">
+      <div class="photo-gallery">
+        <div class="photo">
+          <img src="images/ACTIVITY-ROOM_04.jpg" alt="Photo 1">
+          <div class="name" style="font-size: 30px;">Indoor Games</div>
+        </div>
+        <div class="photo">
+          <img src="images/ACTIVITY_11.jpg" alt="Photo 2">
+          <div class="name" style="font-size: 30px;">Football / Cricket</div>
+        </div>
+        <div class="photo">
+          <img src="images/ACTIVITY_15.jpg" alt="Photo 3">
+          <div class="name" style="font-size: 30px;">Cycling</div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+    <div id="gap"></div>
+    <div id="gap"></div>
+    <!-- <div id="gap"></div> -->
+    <!-- <div id="gap"></div> -->
+
+
+
+
+    <div class="container">
+      <div class="photo-gallery">
+        <div class="photo">
+          <img src="images/KAYAKING_07.jpg" alt="Photo 1">
+          <div class="name" style="font-size: 20px;">Kayaking</div>
+        </div>
+        <div class="photo">
+          <img src="images/movie.jpg" alt="Photo 2">
+          <div class="name" style="font-size: 20px;">Outdoor Movie Theatre</div>
+        </div>
+        <div class="photo">
+          <img src="images/pool.jpg" alt="Photo 3">
+          <div class="name" style="font-size: 20px;">Swimming</div>
+        </div>
+        <div class="photo">
+          <img src="images/gym.jpg" alt="Photo 3">
+          <div class="name" style="font-size: 20px;">Gymnasium</div>
+        </div>
+      </div>
+
+    </div>
+
+
+<div id="gap"></div>
+
+    <!-- ************************************************************************************************************************************************************************************************************************************************************ -->
+    <div id="gap"></div>
+
+    <div class="container-fluid exo2" style="background-color:#e7e7e7;">
+       <div id="gap"></div>
+      
+      <h2><strong>SPECIAL ACTIVITIES</strong></h2>
+      <p>Take a look at the special activities at Royal NestIn</p>
+    
+
+
+    <div id="gap"></div>
+
+
+
+
+   <div class="image-gallery container">
+      <div class="row">
+        <div class="image vertical">
+          <img src="images/event2.jpg" alt="Vertical Photo 1">
+          <div class="name2">ATV BIKE RIDES</div>
+        </div>
+        <div class="image vertical">
+          <img src="images/event4.jpg" alt="Vertical Photo 2">
+          <div class="name2">Boating</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="image horizontal">
+          <img src="images/speedboat.jpg" alt="Horizontal Photo">
+          <div class="name2">Speed Boating</div>
+        </div>
+      </div>
+    </div>
+    <div id="gap"></div>
+</div>
+
+
+
+
+
+
+    <!-- ************************************************************************************************************************************************************************************************************************************************************ -->
+
+
+
+    <div id="gap"></div>
+
+
+<div class="container-fluid exo2">
+       <div id="gap"></div>
+      
+      <h2><strong>SPECIAL EXPERIENCES</strong></h2>
+      <p>The experiences that you get at Royal NestIn are life long and worth remembering.<br> Welcome to the rustic riverside resort</p>
+    </div>
+
+
+<div id="gap"></div>
+    <!-- ************************************************************************************************************************************************************************************************************************************************************ -->
+    
+
+
+
+    <div id="gap"></div>
+
+
+
+
+<div class="container1">
+  <div class="photo">
+    <img src="images/tapri1.jpg" alt="Your Photo" style="width: 100%;box-shadow: 0 0 10px rgba(0, 0, 0, 1);">
+  </div>
+  <div class="text">
+    <h2><strong>ROYAL TAPRI</strong></h2></br>
+    <p style="text-align: justify;">Remember the last time you had access to the classic, tasty childhood treats we’re privileged to have in India? Walk into our estate and stop by at our awe-inspiring tapri offering everything from Phantom cigarettes, golas, hajmolas, and packet munchies to refreshments ranging from cutting chai, sugarcane juice, and utterly fresh seasonal fruit juices from our very own organic farms.</p>
+  </div>
+</div>
+  
+
+<div id="gap"></div>
+
+
+
+
+
+
+
+<div class="container1">
+  
+  <div class="text">
+    <h2><strong>DINNER ON RAFT</strong></h2></br>
+    <p style="text-align: justify;">Ever feasted on delectable meals while drifting on a raft? We are honoured to offer you a raft dinner with seductive lighting that will propel you into a charming world of magic. All this while your tummy and heart are taken aback by the wholly appetizing intimacy. Ready to relish a raft dinner?</p>
+  </div>
+  <div class="photo" style="margin-right: 0;" >
+    <img src="images/s2.jpg" alt="Your Photo" style="width: 100%;box-shadow: 0 0 10px rgba(0, 0, 0, 1);">
+  </div>
+</div>
+  
+
+<div id="gap"></div>
+
+
+
+
+<div class="container1">
+  <div class="photo">
+    <img src="images/mov.jpg" alt="Your Photo" style="width: 100%;box-shadow: 0 0 10px rgba(0, 0, 0, 1);">
+  </div>
+  <div class="text">
+    <h2><strong>MOVIE ON RAFT</strong></h2></br>
+    <p style="text-align: justify;">Pull out your cloaks and opt-in for a cinematic experience on a raft. Anchor on through the tranquility of the Vaitarna River and allow the beauty of cinema and nature to seduce your senses to that of a canoodled baby. So, is it Tom Hanks or Marilyn Monroe? With/Without Meals</p>
+  </div>
+</div>
+  
+
+<div id="gap"></div>
+
+
+
+
+
+<div class="container1">
+  
+  <div class="text">
+    <h2><strong>GAZEBO DINING</strong></h2></br>
+    <p style="text-align: justify;">Reserve our mindfully crafted gazebo and indulge in an epic dining environment! Let the twirling vines do their thing, let the open air absolve your stress, and let our grand gazebos distribute their aura in your memories, be it through pictures or conversations for the ages. Whether it’s a rainy night, sunny afternoon, or warm winter evening, a gazebo meal doesn’t sound too bad, does it?</p>
+  </div>
+  <div class="photo">
+    <img src="images/s3.jpg" alt="Your Photo" style="width: 100%;box-shadow: 0 0 10px rgba(0, 0, 0, 1);">
+  </div>
+</div>
+  
+
+<div id="gap"></div>
+
+
+
+<div class="container1">
+  <div class="photo">
+    <img src="images/riv.jpg" alt="Your Photo" style="width: 100%;box-shadow: 0 0 10px rgba(0, 0, 0, 1);">
+  </div>
+  <div class="text">
+    <h2><strong>RIVERSIDE PICNIC</strong></h2></br>
+    <p style="text-align: justify;">Grab your favourite snacks and drinks! Head by the riverside for a banter session or enjoy a remedying bonfire. If you like, take a dip in the water or go for a kayaking adventure.</p>
+  </div>
+</div>
+  
+
+<div id="gap"></div>
+
+
+
+
+
+<div class="container1">
+  
+  <div class="text">
+    <h2><strong>JUNGLE DINING</strong></h2></br>
+    <p style="text-align: justify;">Revel in the joy of a succulent dinner amid the mystical aura of the encompassing woods at Royal NestIn. Let the beating symphony of crickets and rustling leaves blend in to offer you a surreal dining event. See you at 7PM?</p>
+  </div>
+  <div class="photo">
+    <img src="images/jun.jpg" alt="Your Photo" style="width: 100%;box-shadow: 0 0 10px rgba(0, 0, 0, 1);">
+  </div>
+</div>
+  
+
+<div id="gap"></div>
+
+
+
+<div class="container1">
+  <div class="photo">
+    <img src="images/gaz.jpg" alt="Your Photo" style="width: 100%;box-shadow: 0 0 10px rgba(0, 0, 0, 1);">
+  </div>
+  <div class="text">
+    <h2><strong>OPEN GAZEBO SETUP</strong></h2></br>
+    <p style="text-align: justify;">Walk into our exquisitely themed gazebo and settle down for a toothsome meal, all while you loosen up on this grandstand overlooking the calm waters. Chit-chat your way through high-tea (from 4 to 6 PM) and witness nature’s charm by observing how the sunlight distributes through the greenery.</p>
+  </div>
+</div>
+  
+
+<div id="gap"></div>
+
+
+
+
+
+<div class="container1">
+  
+  <div class="text">
+    <h2><strong>MANDAP DINING</strong></h2></br>
+    <p style="text-align: justify;">When unoccupied, our mandap setup is effortlessly transformed into a dining experience (post 8 PM), that too in an all-Rajasthani-themed setting. Make your ideal escapade a treasured one by feasting amid warm-lit environs and the engrossing whistles of the Vaitarna river.</p>
+  </div>
+  <div class="photo">
+    <img src="images/man.jpg" alt="Your Photo" style="width: 100%;box-shadow: 0 0 10px rgba(0, 0, 0, 1);">
+  </div>
+</div>
+  
+
+<div id="gap"></div>
+
+
+
+<div class="container1">
+  <div class="photo">
+    <img src="images/shik.jpg" alt="Your Photo" style="width: 100%;box-shadow: 0 0 10px rgba(0, 0, 0, 1);">
+  </div>
+  <div class="text">
+    <h2><strong>SHIKARA</strong></h2></br>
+    <p style="text-align: justify;">Royal NestIn brings the Shikara experience from Kashmir to the Vaitarna river by the banks of our 150-acre luxury estate. Embark on a gondola-like boat ride and glide through the serene waters while you feast on exotic food and hydrate on flavoursome refreshments. Our beautifully decorated Shikaras come with a simple yet-classy rooftop and easily accommodate four people. Come witness spellbinding sunsets while our boatman rows you to visual glory.
+
+</p>
+  </div>
+</div>
+  
+
+<div id="gap"></div>
+
+
+
+<div class="container1">
+  
+  <div class="text">
+    <h2><strong>DOME DINING</strong></h2></br>
+    <p style="text-align: justify;">Step out on the deck and stargaze to glory, or sit in and feast in a magnificently well-lit dome, treating your taste buds to a delicious dinner. While the hanging vines and in-dome aesthetics amplify your feasting experience, the starry nights will make your jaw drop
+
+</p>
+  </div>
+  <div class="photo">
+    <img src="images/dom.jpg" alt="Your Photo" style="width: 100%;box-shadow: 0 0 10px rgba(0, 0, 0, 1);">
+  </div>
+</div>
+  
+
+<div id="gap"></div>
+
+
+
+<div class="container1">
+  <div class="photo">
+    <img src="images/poo.jpg" alt="Your Photo" style="width: 100%;box-shadow: 0 0 10px rgba(0, 0, 0, 1);">
+  </div>
+  <div class="text">
+    <h2><strong>POOLSIDE CELEBRATIONS</strong></h2></br>
+    <p style="text-align: justify;">Poolside Celebrations/ Poolside Party/ Private Poolside Parties/ Swim N Chill Plunge and splash! Host a poolside get-together and personalize the setting any way you like – our event planning experts enliven celebratory setups and present exquisite gastronomical offerings, games, and music shows. Create your own tropical paradise today!</p>
+  </div>
+</div>
+  
+
+<div id="gap"></div>
+
+
+
+<div class="container1">
+  
+  <div class="text">
+    <h2><strong>PROPOSAL BY THE RIVER</strong></h2></br>
+    <p style="text-align: justify;">Seeking the perfect destination to start your march towards tying the knot? At Royal NestIn, we've reserved a by-the-river sandpit that our in-house design experts bring to life with charming decorations - sowing the seeds for a proposal etched in your partner's memories for eternity.</p>
+  </div>
+  <div class="photo">
+    <img src="images/sandpit.jpg" alt="Your Photo" style="width: 100%;box-shadow: 0 0 10px rgba(0, 0, 0, 1);">
+  </div>
+</div>
+  
+
+<div id="gap"></div>
+
+
+
+<div class="container1">
+  <div class="photo">
+    <img src="images/propose.jpg" alt="Your Photo" style="width: 100%;box-shadow: 0 0 10px rgba(0, 0, 0, 1);">
+  </div>
+  <div class="text">
+    <h2><strong>RIVERSIDE CELEBRATIONS</strong></h2></br>
+    <p style="text-align: justify;">How would a riverside celebratory experience decked with aesthetic lighting and wholesome ornamental delights be? Come over and see for yourself! Not to forget, the sandy base introduces a beach-like vibe translating into a riveting scene. Birthdays, anniversaries, festive parties, or personalized euphoric get-togethers – we've curated a landscape for one and all.</p>
+  </div>
+</div>
+  
+
+<div id="gap"></div>
+
+
+
+
+
+<div class="container1">
+  
+  <div class="text">
+    <h2><strong>TUNNEL DINING</strong></h2></br>
+    <p style="text-align: justify;">Walk across through a charming pathway decked with handmade lighting fixtures oozing mild yellow luminosity. A few steps into our aesthetically-stimulating tunnel dining paradise, and groups of families and friends can savour lip-smacking meals in the semi-open-air tunnel setup at Royal NestIn.</br>Be our guest and partake in a delightful feast with top-shelf hospitality and an otherworldly ambiance.</p>
+  </div>
+  <div class="photo">
+    <img src="images/tun.png" alt="Your Photo" style="width: 100%;box-shadow: 0 0 10px rgba(0, 0, 0, 1);">
+  </div>
+</div>
+  
+
+<div id="gap"></div>
+
+
+
+<div class="container1">
+  <div class="photo">
+    <img src="images/shami.png" alt="Your Photo" style="width: 100%;box-shadow: 0 0 10px rgba(0, 0, 0, 1);">
+  </div>
+  <div class="text">
+    <h2><strong>SHAMIYANA</strong></h2></br>
+    <p style="text-align: justify;">An enchanting riverside haven for couples. Enjoy a cute set-up under the stars, indulging in a culinary symphony that makes every moment magical. Perfect for intimate dining/ unforgettable proposals.</p>
+  </div>
+</div>
+  
+
+<div id="gap"></div>
+<div id="gap"></div>
+<div id="gap"></div>
+
+
+
+<p class="exo2"><b>Note </b>- Our water sports / activities will not be operational during the monsoon period, keeping in mind the safety of our guests, your cooperation will be highly appreciated.</p>
+
+
+
+
+
+
+
+
+
+
+    <!-- ************************************************************************************************************************************************************************************************************************************************************ -->
+    <div id="gap"></div>
+
+  
+
+
+
+<footer class="footer-area">
+      <!-- Footer Widget Start -->
+      <div class="footer-widget-area bg-dark">
+        <div class="container">
+          <div class="row mb-n60">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-60">
+              <div class="single-footer-widget">
+                <div class="footer-logo">
+                  <a href="index.html"><img src="images/white_hotel_logo.png" alt="Royal Nestin Resort" width="50%"></a>
+                </div>
+                <p>
+                  To make your experience as rich and beautiful as possible, our dedicated team is at your service. So for any queries, special requests or to book your stay at Royal NestIn, please get in touch with us.
+                </p>
+                 <div class="social-icons">
+    <a href="https://www.linkedin.com/in/mahak-agrawal-386259251" target="_blank"><i class="bi bi-linkedin"></i></a>
+    <a href="https://www.instagram.com/oshi.rst" target="_blank"><i class="bi bi-instagram" ></i></a>
+  </div>
+              </div>
+            </div>
+            <div class="col-xl-3 offset-lg-1 col-lg-4  col-md-6 col-sm-6 col-12 mb-60">
+              <div class="single-footer-widget">
+                <h3>contact us</h3>
+                <div class="c-info">
+                  <span><i class="bi bi-geo-alt-fill"></i></span>
+                  <span>Mhow Bypass, Madhya Pradesh 453331</span>
+                </div>
+                <div class="c-info">
+                  <span><i class="bi bi-envelope"></i></span>
+                  <span>en21cs301425@medicaps.ac.in<br>bookings@RNResort.com</span>
+                </div>
+                <div class="c-info">
+                  <span><i class="bi bi-telephone"></i></span>
+                  <span style="margin-bottom:10px;margin-top:10px;">+91 8602347213<br></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6 col-12 mb-60">
+              <div class="single-footer-widget">
+                <h3>quick links</h3>
+                <ul class="footer-list">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="AboutUs.html">About Us</a></li>
+                  <li><a href="Accomodation.html">Accomodations</a></li>
+          <li><a href="dining.html">Dining</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-60">
+              <div class="single-footer-widget">
+                <h3>quick links</h3>
+                <ul class="footer-list">
+                  <li><a href="wedding.html">Weddings</a></li>
+                  <li><a href="experience.html">Experiences</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+           <li><a href="contact.html">Contact</a></li>
+                </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      <!-- Footer Widget End -->
+      <!-- Footer Bottom Area Start -->
+      <div class="footer-bottom-area bg-black"> 
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-auto">
+              <div class="footer-text text-center">
+                <span>© 2024 <b class="text-white">Royal NestIn Resort</b><span>
+              </span></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button onclick="topFunction()" id="scrollBtn" title="Go to top">&#8593;</button>
+
+
+
+    
+    </footer>
+
+
+
+<!-- ************************************************************************************************************************************************************************************************************************************************************ -->
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+</body>
+</html>
